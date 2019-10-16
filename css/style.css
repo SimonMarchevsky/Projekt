@@ -1,0 +1,271 @@
+.font {
+	font-family: 'Major Mono Display', monospace;
+}
+.tma {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+    opacity: .8;
+}
+
+
+
+
+nav {
+    padding: 2% 0 2% 0;
+    position: fixed;
+    background-color: black;
+    width: 20vw;
+    height: 100vh;
+    z-index: 3;
+    left: -20vw;
+    transition: .5s;
+    color: white;
+}
+nav i {
+    font-size: 150%;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+nav h2 {
+    font-size: 150%;
+    margin-left: 5%;
+}
+nav a {
+    text-decoration: none;
+    color: #999999;
+    transition: .2s;
+}
+nav a:hover {
+    color: white;
+    margin-left: 10%;
+}
+nav ul {
+    margin-bottom: 15%;
+}
+nav li {
+    /* border: 1px solid red; */
+    width: 35%;
+    margin: 10% 0 0 15%;
+}
+.otvor {
+    /* border: 1px solid red; */
+    position: relative;
+}
+.roll {
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 160%;
+    top: 500%;
+    transition: .5s;
+    opacity: 0;
+}
+.roll li {
+    margin: 15% 0 15% 30%;
+}
+.kys {
+    /* background-color: red; */
+    position: relative;
+    width: 100%;
+    height: 15vh;
+}
+.soc {
+    /* background-color: green; */
+    border-top: 1px solid white;
+    position: relative;
+    width: 90%;
+    height: 15vh;
+    padding-top: 5%;
+    margin: 0 5% 0 5%;
+}
+.soc i {
+    position: relative;
+}
+.soc li {
+    display: inline;
+    margin: 0 5% 0 10%;
+}
+
+/* 
+ * HEADER
+ */
+header {
+    height: 150vh;
+}
+header i {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    font-size: 200%;
+    z-index: 1;
+    cursor: pointer;
+}
+.login {
+    font-size: 100%;
+    top: 3.5%;
+    left: 4.5%;
+} 
+.kocky {
+    width: 30vw;
+    height: 70vh;
+    float: left;
+    border-radius: 3px;
+    margin: 1% 0 1% 2.5vw;
+    box-shadow: 0 10px 10px 0 #595959;
+    transition: .5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.black {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    border-radius: 3px;
+    position: absolute;
+    transition: .5s;
+}
+.text {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    position: absolute;
+    transition: .5s;
+    color: white;
+    text-align: center;
+}
+
+
+.down {
+    top: 100%;
+}
+.up {
+    top: -100%;
+}
+.left {
+    left: -100%;
+}
+.right {
+    left: 100%;
+}
+
+
+.kocky:hover .black {
+    top: 0;
+    left: 0;
+}
+.kocky:hover .text {
+    top: 0%;
+    left: 0;
+}
+
+.text h1 {
+    font-size: 250%;
+    margin: 15% 0 25% 0;
+}
+
+
+.uvod {
+    text-align: center;    
+}
+.uvod h1 {
+    font-size: 250%;
+    margin: 30% 0 15% 0;
+}
+.uvod p {
+    font-size: 200%;
+}
+
+/* KOCKY */
+
+.oblecenie {
+    background-image: url(../img/img_4.jpg);
+    background-size: cover;
+}
+.elektronika {
+    background-image: url(../img/img_8.jpg);
+    background-size: cover;
+}
+.domacnost {
+    background-image: url(../img/img_6.jpg);
+    background-size: cover;
+}
+.novinky {
+    background-image: url(../img/Elektronika.jpg);
+    background-size: cover;
+    width: 62.5vw;
+}
+/*
+ * FOOTER
+ */
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 5% 0 5% 0;
+}
+footer p {
+    font-size: 150%;
+    padding-bottom: 2%;
+}
+
+
+
+.flip-card {
+    perspective: 1000px;
+    box-shadow: none;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: .5s;
+    transform-style: preserve-3d;
+}
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    /* border: 1px solid red; */
+}
+
+.flip-card-back h1 {
+    font-size: 200%;
+    margin: 15% 0 15% 0;
+}
+.flip-card-back form {
+    text-align: center;
+    /* border: 1px solid green; */
+}
+.flip-card-back input {
+    width: 60%;
+    padding: 4%;
+    margin: 0% 0 5% 0;
+    border: 1px /*2px*/ solid black;
+    border-radius: 5px;
+}
+.flip-card-back button {
+    width: 70%;
+    padding: 4%;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 5%;
+}
+.flip-card-back a {
+    text-decoration: none;
+    color: black;
+}
